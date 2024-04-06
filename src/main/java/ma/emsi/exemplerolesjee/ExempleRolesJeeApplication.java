@@ -42,6 +42,7 @@ public class ExempleRolesJeeApplication {
             userService.addRoleToUser("admin1","USER");
             userService.addRoleToUser("admin1","ADMIN");
 
+
             try{
                 User user=userService.authenticate("user1","123456");
                 System.out.println(user.getUserId());
@@ -53,6 +54,8 @@ public class ExempleRolesJeeApplication {
             }catch (Exception exception){
                 exception.printStackTrace();
             }
+
+
 
         };
     }
